@@ -1,3 +1,3 @@
 <?php
 
-echo 'EWA!';
+echo 'Hallo Stephan';
