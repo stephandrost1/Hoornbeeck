@@ -23,12 +23,12 @@
 
     <form action="" method="post">
 
-        <input type="radio" id="ja" name="sneeuw" value="ja" <?php if ($_POST && $checked == 'ja') {
+        <input type="radio" id="ja" name="sneeuw" value="ja" <?php if ($checked == 'ja') {
                                                                     echo 'checked';
                                                                 } ?>>
         <label for="ja">Er ligt minder dan 10cm sneeuw</label><br>
 
-        <input type="radio" id="nee" name="sneeuw" value="nee" <?php if ($_POST && $checked == 'nee') {
+        <input type="radio" id="nee" name="sneeuw" value="nee" <?php if ($checked == 'nee') {
                                                                     echo 'checked';
                                                                 } ?>>
         <label for="nee">Er ligt meer dan 10cm sneeuw</label><br>

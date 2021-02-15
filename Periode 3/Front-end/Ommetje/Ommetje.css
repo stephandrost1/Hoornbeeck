@@ -1,0 +1,86 @@
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/544505134063943701/810811382206431282/heide.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -50px;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+}
+
+.naam {
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.xp {
+  float: right;
+  margin-top: -55px;
+  font-size: 15px;
+}
+
+.xp::first-letter {
+  color: purple;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.min {
+  float: left;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  z-index: 10;
+  bottom: -190px;
+}
+.min::first-letter {
+  color: #a8138d;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.border {
+  position: relative;
+  margin-top: 100px;
+  z-index: -1;
+  vertical-align: top;
+}
+
+.bottom {
+  background-color: #e3dfcf;
+  height: 400px;
+  width: 430px;
+  position: relative;
+  margin-left: -8px;
+  margin-top: 0px;
+  z-index: -1;
+  vertical-align: top;
+}
+
+.start {
+  color: white;
+  background-color: #a8138d;
+  position: relative;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  padding: 10px 75px;
+  bottom: -275px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 10px 5px #888888;
+}
+
+.whiteborder {
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  position: relative;
+  bottom: -300px;
+  left: px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px #888888;
+}
