@@ -15,6 +15,12 @@
 
     <?php
 
+    $ingelogd = "Inloggen";
+
+    if (isset($_GET['ingelogd'])) {
+        $ingelogd = 'Uitloggen';
+    }
+
     $cursussen = [
         [
             'Cursus' => 'Software Developer',
@@ -41,15 +47,22 @@
     ?>
     <center>
         <h1>Cursus aanmeldformulier</h1>
+
+        <a href="#">Home</A>
+        <a href="Login.php"><?php echo $ingelogd;
+                            ?></a> <br>
+
         <form method="post" action="?">
-            <label><b>Naam:</b></label>
-            <input type="text" name="naam" autocomplete="off">
             <table border="3px" cellspacing="0" cellpadding="5">
                 <tr>
                     <td><b>Cursus</b></td>
                     <td><b>Omschrijving</b></td>
                     <td><b>Prijs</b></td>
-                    <td><b>Aanmelden</b></td>
+                    <?php
+                    if (isset($_GET['ingelogd'])) {
+                        echo "<td><b>Aanmelden</b></td>";
+                    }
+                    ?>
                 </tr>
 
                 <?php
@@ -59,10 +72,11 @@
         <tr>   
             <td>" . $cursus['Cursus'] . "</td>
             <td>" . $cursus['Omschrijving'] . "</td>
-            <td>" . $cursus['Prijs'] . "</td>
-            <td><input type='submit' value='Aanmelden'></td>
-        </tr>
-        ";
+            <td>" . $cursus['Prijs'] . "</td>";
+                    if (isset($_GET['ingelogd'])) {
+                        echo "<td><a href='Index.php?ingelogd&cursus=" . $cursus['Cursus'] . "'>Aanmelden</a></td>";
+                    }
+                    echo "</tr>";
                 }
 
                 echo " 
@@ -70,14 +84,9 @@
         </form>
     ";
 
-                if ($_POST) {
-                    if ($_POST['naam']) {
-                        echo $_POST['naam'] . ' heeft zich opgegeven voor een cursus!';
-                    } else {
-                        echo 'Iemand heeft zich opgegeven voor een cursus!';
-                    }
+                if (isset($_GET['cursus'])) {
+                    echo "Je hebt je opgegeven voor de cursus: " . $_GET['cursus'];
                 }
-
 
                 ?>
 
