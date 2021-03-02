@@ -1,88 +1,51 @@
-<html>
+<?php include 'header.inc.php' ?>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Inloggen</title>
+    <link rel="stylesheet" href="Login.css">
 </head>
-<style>
-    * {
-        margin: 10px;
-        font-family: sans-serif;
-    }
-
-    form {
-        border: 3px solid #f1f1f1;
-    }
-
-    input[type=text],
-    input[type=password] {
-        width: 30%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    button {
-        background-color: orange;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 30%;
-        text-align: center;
-    }
-
-    button:hover {
-        opacity: 0.8;
-    }
-</style>
-
-<?php
-$yesno = "";
-
-$username = "Johan";
-$password = "Welkom123";
-
-if ($_POST) {
-    $uname = $_POST['uname'];
-    $psw = $_POST['psw'];
-
-
-    if ($uname == $username && $psw == $password) {
-        header("location: Index.php?ingelogd");
-    } else {
-        $yesno = "De inloggegevens zijn niet goed!";
-    }
-}
-
-
-?>
 
 <body>
     <center>
+        <a href="Index.php">Home</A>
+        <a href="#">Inloggen</a> <br>
         <form action="" method="post">
             <div class="container">
                 <label for="uname"><b>Gebruikersnaam</b></label><br>
-                <input type="text" placeholder="Johan" name="uname" required><br>
+                <input type="text" placeholder="Johan" name="uname"><br>
 
                 <label for="psw"><b>Wachtwoord</b></label><br>
-                <input type="password" placeholder="Welkom123" name="psw" required> <br>
+                <input type="password" placeholder="Welkom123" name="psw"> <br>
 
                 <button type="submit">Login</button><br>
                 <?php
-                if ($yesno) {
-                    echo '<div style="color: red;">' . $yesno . '</div>';
-                }
 
+                if ($_POST) {
+
+                    $con = mysqli_connect('localhost', 'root', '', 'cursussen');
+
+                    $username = $_POST['uname'];
+                    $password = $_POST['psw'];
+
+                    $sql = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
+                    $results = mysqli_query($con, $sql);
+                    $array = mysqli_fetch_array($results, MYSQLI_ASSOC);
+                    $amount = mysqli_num_rows($results);
+
+                    if ($amount == 1) {
+                        $_SESSION['ingelogd'] = $_POST['uname'];
+                        header('location: index.php');
+                    } else {
+                        $message = "The username or password is incorrect!";
+                    }
+
+                    if ($message) {
+
+                        echo '<div class="alert alert-danger" role="alert">' . $message . '</div>';
+                    }
+                }
                 ?>
             </div>
         </form>
-        <a href="Index.php">Home</A>
-        <a href="#">Inloggen</a> <br>
         <center>
 </body>
 

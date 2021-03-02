@@ -1,0 +1,8 @@
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+table-self {
+  height: 20px;
+}

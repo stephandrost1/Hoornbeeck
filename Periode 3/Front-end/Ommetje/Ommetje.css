@@ -1,7 +1,12 @@
+* {
+  max-width: 400px;
+}
+
 body {
   background-image: url(https://cdn.discordapp.com/attachments/544505134063943701/810811382206431282/heide.jpg);
   background-repeat: no-repeat;
   background-position: 0px -50px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -364,7 +369,7 @@ h1 {
   margin-left: 14px;
   font-family: sans-serif;
   font-size: 15px;
-  margin-top: px;
+  margin-top: 0px;
   font-weight: bolder;
   color: #746c6c;
 }
@@ -545,32 +550,164 @@ h1 {
 
 .footer-img {
   position: absolute;
-  width: 120%;
-  margin-top: 1210px;
-  margin-left: -10px;
+  width: 130%;
+  margin-top: 1260px;
+  margin-left: -8px;
 }
 
 .footer-text1 {
   position: absolute;
   z-index: 1;
-  margin-left: 15px;
+  margin-left: 10px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
-  margin-top: 1330px;
+  margin-top: 1345px;
   color: white;
 }
 
 .footer-text2 {
   position: absolute;
   z-index: 1;
-  margin-left: 15px;
+  margin-left: 10px;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
-  margin-top: 1440px;
+  margin-top: 1455px;
   color: white;
 }
 
 .questionmark {
   width: 6%;
   position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.questionmarkdiv {
+  position: fixed !important;
+  bottom: 10px;
+  right: 8px;
+  z-index: 100;
+  width: 100%;
+}
+
+.medal_popup {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 0 3px 10000px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  margin-left: -20px;
+  width: 340px;
+  height: 540px;
+  opacity: 0.97;
+}
+
+.popup_header {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  left: 100px;
+  top: 25px;
+  text-align: left;
+}
+
+.popup_des {
+  font-size: 12px;
+  color: gray;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  text-align: start;
+}
+
+.icons_popup {
+  width: 100%;
+  position: absolute;
+  top: 130px;
+  left: 10px;
+}
+
+.popup_icon {
+  border: 4px solid #d4d0d0;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #e7dfdf;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 40px;
+  left: 10px;
+  top: -30px;
+  margin-top: 40px;
+}
+
+.popup_icon_header {
+  position: absolute;
+  top: -22px;
+  left: 13px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.popup_icon_footer {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  top: 48px;
+  font-size: 15px;
+  left: 5px;
+}
+
+.close-btn {
+  background-color: white;
+  position: absolute;
+  outline: none;
+  border: none;
+  opacity: 0.97;
+  margin-top: 480px;
+  margin-left: -30px;
+  color: #a8138d;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+.hr {
+  border-top: 1px solid #d4d3d3;
+  width: 90%;
+  margin-top: 470px;
+  position: absolute;
+  margin-left: 18px;
+}
+
+.fadein {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.weetjes-btn {
+  color: white;
+  background-color: #a8138d;
+  position: relative;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  padding: 10px 75px;
+  bottom: -155px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 10px 5px #888888;
 }

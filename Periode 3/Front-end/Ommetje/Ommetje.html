@@ -8,21 +8,29 @@
     <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/UdYMoVX8SxFIGZdP5OY62u28apxK-SabhB0BeNO0vWGQka8qpU2mAQcEk2sN7IE7Ltg"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Ommetje Lopen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <title>Ommetje</title>
 </head>
-<body>
+<body id="all">
+    <script src="Ommetje.js"></script>
+    <div id="popwrapper">
     <div>
         <!--HEADER-->
         <div class="header">
             <h1 class="name">Stephan Drost</h1>
             <h1 class="xp">0 XP</h1>
-            <img src="/Ommetje/Images/head.png" width="55%" height="30%" alt="head" class="headimg">
+            <img src="/Images/head.png" width="55%" height="30%" alt="head" class="headimg">
         </div>
         
         <!--Top-->
         <div class="middle">
             <h1 class="minutes">0 / 20 min</h1>
             <button class="start-btn">Start Ommetje</button>
+        </div>
+
+        <!--QUESTIONMARK-->
+        <div class="questionmarkdiv">
+            <a href="Feedback.html"><img src="/Images/questionmark.png" class="questionmark"></a>
         </div>
             
             
@@ -44,45 +52,160 @@
         <!--MEDAILLES-->
         <center><div class="medaille-list">
             <div class="meda-title">Medailles</div>
-                
-            <div class="meda-img1"></div>
+        
+            <!--MEDAL 1-->
+            <div class="meda-img1 meda1" onclick="openPopup('medal_popup')"></div>
             <div class="meda-text1"><div class="meda-title1">Hiker</div><br>Loop 20 minuten<br>per dag</div>
+            <!--MEDAL 1 POPUP-->
+            <div class="medal_popup fadein" id="medal_popup">
+                <div class="popup_header">De Hiker medaille</div>
+                <span class="popup_des">Loop dagelijks minimaal 20 minuten. Je krijgt hier per dag 5 XP punten voor. Voor je tweede Ommetje van de dag krijg je 1 extra punt.</span>
+                <div class="icons_popup">
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 15px !important;"><b>4x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">brons</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 10px !important;"><b>15x</b></span><span class="popup_icon_footer" style="left: 8px !important; font-size: 13px !important;">zilver</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>35x</b></span><span class="popup_icon_footer" style="left: 9px !important; font-size: 13px !important;">goud</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>55x</b></span><span class="popup_icon_footer" style="left: 5px !important; font-size: 13px !important;">robijn</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>75x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">saffier</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>100x</b></span><span class="popup_icon_footer" style="left: 0px !important; font-size: 13px !important;">diamant</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 9px !important;"><b>200x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">smaragd</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 9px !important;"><b>300x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">amethist</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>400x</b></span><span class="popup_icon_footer" style="left: -3px !important; font-size: 13px !important;">parelmoer</span></div>
+                </div>
+                <hr class="hr">
+                <button class="close-btn" onclick="closePopup('medal_popup')">Sluiten</button>
+            </div>
             
-            <div class="meda-img2"></div>
+            <!--MEDAL 2-->
+            <div class="meda-img2" onclick="openPopup('medal_popup1')"></div>
             <div class="meda-text2"><div class="meda-title2">Reeks</div><br>Aaneengesloten<br>dagen lopen</div>
-            
-            <div class="meda-img3"></div>
+            <!--MEDAL 2 POPUP-->
+            <div class="medal_popup fadein" id="medal_popup1">
+                <div class="popup_header">De Reeks medaille</div>
+                <span class="popup_des">Je reeks bestaat uit het aantal aaneengesloten dagen dat je een Ommetje maakt. Je krijgt hier per dag 3 XP punten voor.</span>
+                <div class="icons_popup">
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 15px !important;"><b>5x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">brons</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>15x</b></span><span class="popup_icon_footer" style="left: 8px !important; font-size: 13px !important;">zilver</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>25x</b></span><span class="popup_icon_footer" style="left: 9px !important; font-size: 13px !important;">goud</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>40x</b></span><span class="popup_icon_footer" style="left: 5px !important; font-size: 13px !important;">robijn</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>60x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">saffier</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>85x</b></span><span class="popup_icon_footer" style="left: 0px !important; font-size: 13px !important;">diamant</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>190x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">smaragd</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>275x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">amethist</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>360x</b></span><span class="popup_icon_footer" style="left: -3px !important; font-size: 13px !important;">parelmoer</span></div>
+                </div>
+                <hr class="hr">
+                <button class="close-btn" onclick="closePopup('medal_popup1')">Sluiten</button>
+            </div>
+
+            <!--MEDAL 3-->
+            <div class="meda-img3" onclick="openPopup('medal_popup2')"></div>
             <div class="meda-text3"><div class="meda-title3">Hart</div><br>Deel de <br>campagne</div>
-                
-            <div class="meda-img4"></div>
+            <!--MEDAL 3 POPUP-->
+            <div class="medal_popup fadein" id="medal_popup2" style="height: 580px !important;">
+                <div class="popup_header">De hart medaille</div>
+                <span class="popup_des">Na ieder gelopen Ommetje kun je de campagne delen met je vrienden. Deel je de campagne succesvol via Whatsapp, Facebook,Twitter of LinkedIn dan verdien je 2 XP punten op je Hart medaille. Je krijgt hier per dag maximaal drie keer 2 XP punten voor.</span>
+                <div class="icons_popup" style="top: 160px !important;">
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 15px !important;"><b>5x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">brons</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>15x</b></span><span class="popup_icon_footer" style="left: 8px !important; font-size: 13px !important;">zilver</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>25x</b></span><span class="popup_icon_footer" style="left: 9px !important; font-size: 13px !important;">goud</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>40x</b></span><span class="popup_icon_footer" style="left: 5px !important; font-size: 13px !important;">robijn</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>60x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">saffier</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>85x</b></span><span class="popup_icon_footer" style="left: 0px !important; font-size: 13px !important;">diamant</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>190x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">smaragd</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>275x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">amethist</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>360x</b></span><span class="popup_icon_footer" style="left: -3px !important; font-size: 13px !important;">parelmoer</span></div>
+                </div>
+                <hr class="hr" style="margin-top: 510px !important;">
+                <button class="close-btn" onclick="closePopup('medal_popup2')" style="margin-top: 530px !important;">Sluiten</button>
+            </div>
+
+            <!--MEDAL 4-->
+            <div class="meda-img4" onclick="openPopup('medal_popup3')"></div>
             <div class="meda-title4">Vroege vogel</div><div class="meda-text4">Loop voor 9:00<br>uur</div>
-                
-            <div class="meda-img5"></div>
+            <!--MEDAL 4 POPUP-->
+            <div class="medal_popup fadein" id="medal_popup3">
+                <div class="popup_header" style="margin-left: -35px;">De Vroege vogel medaille</div>
+                <span class="popup_des">Start de dag goed en loop je Ommetje voor 9:00 uur 's ochtends voor deze medaille. Je krijgt hier per dag 3 XP punten voor.</span>
+                <div class="icons_popup">
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 15px !important;"><b>3x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">brons</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>10x</b></span><span class="popup_icon_footer" style="left: 8px !important; font-size: 13px !important;">zilver</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>25x</b></span><span class="popup_icon_footer" style="left: 9px !important; font-size: 13px !important;">goud</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>40x</b></span><span class="popup_icon_footer" style="left: 5px !important; font-size: 13px !important;">robijn</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>60x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">saffier</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>90x</b></span><span class="popup_icon_footer" style="left: 0px !important; font-size: 13px !important;">diamant</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>200x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">smaragd</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>300x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">amethist</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>400x</b></span><span class="popup_icon_footer" style="left: -3px !important; font-size: 13px !important;">parelmoer</span></div>
+                </div>
+                <hr class="hr">
+                <button class="close-btn" onclick="closePopup('medal_popup3')">Sluiten</button>
+            </div>
+
+            <!--MEDAL 5-->
+            <div class="meda-img5" onclick="openPopup('medal_popup4')"></div>
             <div class="meda-title5">Blijf actief</div><div class="meda-text5">Blijf voldoende in<br>beweging</div>
-                
-            <div class="meda-img6"></div>
-            <div class="meda-title6">Weetjes</div><div class="meda-text6">Spaar alle<br> Hersenweetjes</div>
+            <!--MEDAL 5 POPUP-->
+            <div class="medal_popup fadein" id="medal_popup4" style="height: 600px;">
+                <div class="popup_header" style="margin-left: -35px;">De Blijf actief medaille</div>
+                <span class="popup_des">Als Ommetje jouw locatie mag volgen, dan wordt er bijgehouden of je actief hebt gewandeld. Loop in één Ommetje een afstand van minimaal 750 meter. Hiermee verdien je 4 XP per dag. Voor de beste werking is het noodzakelijk je Locatie herkenning op Altijd te zetten. Daarmee houden we ook coördinaten bij zodat we een Routekaartje vvan je Ommetje kunnen laten zien.</span>
+                <div class="icons_popup" style="top: 195px !important;">
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 15px !important;"><b>3x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">brons</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>10x</b></span><span class="popup_icon_footer" style="left: 8px !important; font-size: 13px !important;">zilver</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>25x</b></span><span class="popup_icon_footer" style="left: 9px !important; font-size: 13px !important;">goud</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>40x</b></span><span class="popup_icon_footer" style="left: 5px !important; font-size: 13px !important;">robijn</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>70x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">saffier</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>100x</b></span><span class="popup_icon_footer" style="left: 0px !important; font-size: 13px !important;">diamant</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>225x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">smaragd</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>325x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">amethist</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 8px !important;"><b>425x</b></span><span class="popup_icon_footer" style="left: -3px !important; font-size: 13px !important;">parelmoer</span></div>
+                </div>
+                <hr class="hr" style="margin-top: 530px !important;">
+                <button class="close-btn" onclick="closePopup('medal_popup4')" style="margin-top: 550px !important;">Sluiten</button>
+            </div>
             
+            <!--MEDAL 6-->
+            <div class="meda-img6" onclick="openPopup('medal_popup5')"></div>
+            <div class="meda-title6">Weetjes</div><div class="meda-text6">Spaar alle<br> Hersenweetjes</div>
+        
             <div class="info-text">Klik op een Medaille voor meer info.</div>
-                
+            <!--MEDAL 6 POPUP-->
+            <div class="medal_popup fadein" id="medal_popup5" style="height: 600px;">
+                <div class="popup_header" style="margin-left: -32px;">De Weetjes medaille</div>
+                <span class="popup_des">Na ieder gelopen Ommetje ontvang je een willekeurig Hersenweetje van Erik Scherder. Net zoals met flippo's, krijg je soms een dubbele. Verzamel ze allemaal om de medaille te behalen. Druk op de knop 'Bekijk jouw weetjes' om te zien welke je al hebt verzameld.</span>
+                <button class="weetjes-btn">Bekijk jouw weetjes</button>
+                <div class="icons_popup" style="top: 210px !important;">
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 15px !important;"><b>5x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">brons</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>10x</b></span><span class="popup_icon_footer" style="left: 8px !important; font-size: 13px !important;">zilver</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>15x</b></span><span class="popup_icon_footer" style="left: 9px !important; font-size: 13px !important;">goud</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>20x</b></span><span class="popup_icon_footer" style="left: 5px !important; font-size: 13px !important;">robijn</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>25x</b></span><span class="popup_icon_footer" style="left: 6px !important; font-size: 13px !important;">saffier</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>30x</b></span><span class="popup_icon_footer" style="left: 0px !important; font-size: 13px !important;">diamant</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>35x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">smaragd</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>40x</b></span><span class="popup_icon_footer" style="left: -1px !important; font-size: 13px !important;">amethist</span></div>
+                    <div class="popup_icon"><span class="popup_icon_header" style="left: 12px !important;"><b>45x</b></span><span class="popup_icon_footer" style="left: -3px !important; font-size: 13px !important;">parelmoer</span></div>
+                </div>
+                <hr class="hr" style="margin-top: 490px !important;">
+                <button class="close-btn" onclick="closePopup('medal_popup5')" style="margin-top: 550px !important; margin-left: -160px;">Sluiten</button>
+            </div>
+
         <!--DONEREN-->       
         <div><center><div class="doneren-list"></center>
             <div class="doneren-title">Doneren</div>
             <div class="doneren-text">De Hersenstichting is afhankelijk<br>van particuliere giften. Dankzij <br>jouw bijdrage kunnen we meer<br> hersenonderzoeken doen.</div>
                 
-            <center><div><button class="doneer-btn">Doneren</button></div></center>
+            <center><a target="_blank" href="https://www.hersenstichting.nl/doneer-ommetje-b/"><div><button class="doneer-btn">Doneren</button></div></a></center>
                 </div></div>
         
         <!--STATS-->
         <div><center><div class="stats-list"></center>
-            <div class="stats-title">Stats</div>
+            <div class="stats-title">Stats & Ommetjes</div>
             
-            <center><div><button class="statistieken-btn">Bekijk Statistieken</button></div></center>
-            <center><div><button class="ommetje-btn">Bekijk je Ommetjes</button></div></center>
+            <center><a href="/Statistieken.html"><div><button class="statistieken-btn">Bekijk Statistieken</button></div></center></a>
+            <center><a href="/Bekijkommetjes.html"><div><button class="ommetje-btn">Bekijk je Ommetjes</button></div></center></a>
 
         <!--FOOTER-->
         </div><center></div>
-            <img class="footer-img" src="/Ommetje/Images/output-onlinepngtools.png">
+            <img class="footer-img" src="/Images/output-onlinepngtools.png">
             
             <div class="footer-text1">Account instellingen<br>Over Ommetje<br>Veelgestelde vragen<br>Uitloggen</div>
             <div class="footer-text2">Privacy statement<br>Terms & Conditions</div>
