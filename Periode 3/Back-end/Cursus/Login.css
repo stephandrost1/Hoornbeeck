@@ -13,8 +13,8 @@ input[type="password"] {
   text-align: center;
 }
 
-button {
-  background-color: orange;
+.submit-btn {
+  background-color: #343a40;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
