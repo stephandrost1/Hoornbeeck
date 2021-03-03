@@ -28,7 +28,7 @@
                 <label for="psw"><b>Wachtwoord</b></label><br>
                 <input type="password" placeholder="Welkom123" name="psw"> <br>
 
-                <button type="submit" style="background-color: #343a40;">Login</button><br>
+                <button type="submit" class="submit-btn">Login</button><br>
                 <?php
 
                 if ($_POST) {
