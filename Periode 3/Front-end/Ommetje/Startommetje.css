@@ -1,0 +1,186 @@
+* {
+  max-width: 400px;
+}
+
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/544505134063943701/810811382206431282/heide.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 400px;
+}
+
+.top-text {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 43px;
+}
+
+.head-img {
+  width: 55%;
+  height: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+.stop-btn {
+  color: white;
+  background-color: #a8138d;
+  position: relative;
+  border-radius: 100%;
+  padding: 33px 33px;
+  bottom: 100px;
+  border: 5px solid white;
+  display: inline-block;
+  margin-left: 40%;
+  z-index: 10;
+}
+
+.white-square {
+  width: 35%;
+  position: absolute;
+  margin-left: -12px;
+  top: 22px;
+}
+
+.count-up {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  z-index: 100;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: -20px;
+  margin-left: 120px;
+}
+
+.hero-wave {
+  position: absolute;
+  bottom: 360px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 20%;
+}
+svg:not(:root) {
+  width: 100%;
+  height: auto;
+}
+
+.bottom {
+  background-color: #f2f1ec;
+  height: 400px;
+  width: 425px;
+  position: relative;
+  margin-left: -8px;
+  margin-top: 0px;
+  vertical-align: top;
+}
+
+.total-min {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 60px !important;
+  color: grey;
+}
+
+#popup1 {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 0 3px 10000px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  margin-left: -20px;
+  width: 340px;
+  height: 450px;
+  opacity: 1;
+  margin-top: -650px;
+  margin-left: 6%;
+}
+
+.dot {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: -20px;
+  background-image: url(/Images/Erik.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+.popup-header {
+  font-size: 19px;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  left: 110px;
+  top: 0px;
+  text-align: left;
+  width: 50%;
+}
+
+.popup-text {
+  font-size: 14px;
+  color: gray;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  left: 10px;
+  top: 120px;
+  text-align: start;
+  width: 330px;
+}
+
+.doorloop-btn {
+  color: white;
+  background-color: #a8138d;
+  position: absolute;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  padding: 10px 35px;
+  margin-top: 335px;
+  left: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 10px 1px #888888;
+}
+
+.stoppen-btn {
+  color: rgb(99, 96, 96);
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  padding: 10px 25px;
+  bottom: 28px;
+  left: 110px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 10px 1px #888888;
+}
+
+.fadein {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

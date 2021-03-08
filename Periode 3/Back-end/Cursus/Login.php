@@ -6,21 +6,11 @@
 
 <body>
     <center>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <nav class="navbar navbar-dark bg-dark float-right">
-                <a class="navbar-brand" href="#">Cursus</a>
-            </nav>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="Index.php">Home <span class="sr-only"></span></a>
-                    <a class="nav-item nav-link active" href="#">Inloggen <span class="sr-only"></span></a>
-                </div>
-            </div>
-        </nav>
+        <?php include 'navbar.inc.php' ?>
 
         <br>
 
-        <form action="" method="post">
+        <form action="" method="post" class="login-form">
             <div class="container">
                 <label for="uname"><b>Gebruikersnaam</b></label><br>
                 <input type="text" placeholder="Johan" name="uname"><br>

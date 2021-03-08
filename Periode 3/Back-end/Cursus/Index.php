@@ -1,7 +1,7 @@
 <?php include 'header.inc.php' ?>
 
 <head>
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,24 +22,13 @@
 
 
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <nav class="navbar navbar-dark bg-dark float-right">
-            <a class="navbar-brand" href="#">Cursus</a>
-        </nav>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
-                <a class="nav-item nav-link" href="Login.php"><?php echo $ingelogd;
-                                                                ?></a>
-            </div>
-        </div>
-    </nav>
+    <?php include 'navbar.inc.php' ?>
 
     <br>
 
     <!--TABEL-->
     <center>
-        <form method="post" action="?">
+        <form method="post" action="?" class="tabel-cursus">
             <table border="3px" cellspacing="0" cellpadding="5">
                 <tr>
                     <td><b>Cursus</b></td>
@@ -66,6 +55,7 @@
                     }
                     echo "</tr>";
                 }
+
 
 
                 echo " 

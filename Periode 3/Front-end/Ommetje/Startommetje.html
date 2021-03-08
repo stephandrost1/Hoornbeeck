@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Startommetje.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/UdYMoVX8SxFIGZdP5OY62u28apxK-SabhB0BeNO0vWGQka8qpU2mAQcEk2sN7IE7Ltg"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="Startommetje.js"></script>
+    <title>Ommetje - Start Ommetje</title>
+</head>
+<body>
+    <!--TOP TEXT-->
+    <p class="top-text"><b>Je bent aan het lopen</b> </br>
+       Lock je telefoon en geniet van je omgeving</p>
+    <!--HEAD IMG-->
+    <div class="headimg"><img src="/Images/head.png" class="head-img"></div>
+
+    <!--COUNT-UP-->
+    <div class="count-up"><span id="minutes">00</span>:<span id="seconds">00</span><span class="total-min"> /20</span></div>
+    
+    <!--WAVE-->
+    <div class="hero-wave">
+        <svg width="100%" height="100%" viewBox="0 0 500 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+                <path d="M0,0.8828125 C0,0.8828125 21.5375284,2.70107724 30.175,8.11815895 C70.4419893,33.3720274 173.689709,104.747595 239.525,104.747595 C306.457042,104.747595 408.933103,43.7500826 451.921875,21.6893757 C494.910647,-0.371331192 500,8.11815895 500,8.11815895 L500,200.882812 L0,200.882812 L0,0.8828125 Z" id="Rectangle" fill="#f2f1ec"></path>
+            </g>
+        </svg>
+    </div>
+
+    <!--BOTTOM-->
+    <div class="bottom"></div>
+
+    <!--STOP BUTTON-->
+    <button id="popup" class="stop-btn" onclick="openPopup('popup1')"><img class="white-square" src="/Images/White-square.jpg"></button>
+    
+    <!--POPUP-->
+    <div id="popup1" class="fadein">
+        <div class="dot"></div>
+        <h1 class="popup-header">Weet je zeker dat je wilt stoppen?</h1>
+        <p class="popup-text">Een Ommetje dat korter dan 10 minuten duurt heeft weinig effect op je hersenen. Stop je nu, dan telt het Ommetje ook niet mee. Het is beter als je nog een paar minuten doorloopt!</p>
+        <button class="doorloop-btn" onclick="closePopup('popup1')">Ik loop nog even door!</button></a>
+        <a href="/Ommetje.html"><button class="stoppen-btn">Ik wil stoppen.</button></a>
+    </div>
+
+</body>
+</html>
