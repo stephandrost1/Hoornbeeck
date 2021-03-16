@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/UdYMoVX8SxFIGZdP5OY62u28apxK-SabhB0BeNO0vWGQka8qpU2mAQcEk2sN7IE7Ltg"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="ranglijst.js"></script>
+
+    <title>Ommetje - Ranglijst</title>
+    <link rel="stylesheet" href="ranglijst.css">
+</head>
+<body>
+    <!--HEADER-->
+
+    <div class="header">
+        
+        <a href="/Ommetje.html"><img src="/Images/backArrow.png" alt="backArrow" class="backArrow"></a>
+        <h1 class="title">RANGLIJST</h1>
+
+        <div class="box">Gert2003<div class="dot"></div></div>
+        <div class="box1"><div class="dot-left"></div>avdgalien</div>
+        <div class="box2">Daan_vO<div class="dot"></div></div>
+        <div class="box3"><div class="dot-left"></div>MatthiasB</div>
+        <div class="box4">BslM<div class="dot"></div></div>
+        <div class="box5"><div class="dot-left"></div>Karel306</div>
+        <div class="box6">Mark v/d Graaf<div class="dot"></div></div>
+        <div class="box7"><div class="dot-left"></div>RichardPost</div>
+        <div class="box8">Gerben2004<div class="dot"></div></div>
+        <div class="box9"><div class="dot-left"></div>D h</div>
+        <div class="box10">Daan vH<div class="dot"></div></div>
+        <div class="box11"><div class="dot-left"></div>AdwinZ123</div>
+        <div class="box12">Stephan Drost<div class="dot-active"></div></div>
+        <div class="box13"><div class="dot-left"></div>René van Helden</div>
+        <div class="box14">M@chiel I<div class="dot"></div></div>
+        <div class="box15"><div class="dot-left"></div>Mark_Lokhorst</div>
+        <div class="box16">ItzBarts<div class="dot"></div></div>
+        <div class="box17"><div class="dot-left"></div>Daan Heikamp</div>
+
+
+
+
+            <!--Questionmark-->
+            <div class="questionmarkdiv">
+                <a href="Feedback.html"><img src="/Images/questionmark.png" class="questionmark" ></a>
+            </div>
+    </div>
+    
+    <!--MIDDLE-->
+    
+    <div class="klas" onclick="openPopup('popupjouwteam')">T4I1AA C20</div>
+    
+    <div class="arrow-down">
+        <a onclick="openPopup('popupjouwteam')"><img src="/Images/backArrow.png" alt="downArrow" class="downArrow"></a>
+    </div>
+
+    <div class="start-team">Team gestart op: <b>15-02-2021</b></div>
+    <div class="wissel-team" onclick="openPopup('popupjouwteam')">Wissel of Start een Team</div>
+    <div id="popupjouwteam">
+
+        <h1 class="header1">Jouw Teams</h1>
+
+        <p class="klas2">T4I1AA C20</p> <p class="actief2">Actief</p>
+        <button class="beheer-btn">Team Beheer</button>
+        <button class="sluiten-btn" onclick="closePopup('popupjouwteam')">Sluiten</button>
+
+    </div>
+
+    <div id="popupuitleg">
+        <h1 class="header">Uitleg</h1> </br>
+        <p class="tekst">Op de rangljst zie je jouw positie ten opzichte van anderen. Als je aan meerdere Teams meedoet kan je de Ranglijsten van andere Teams bekijken door op het paarse pijltje naast de Team naam te klikken van deze pagina.</p>
+    </br>
+        <p class="tekst">Zodra je aan een nieuw Team gaat meedoen, dan behoud je je XP in bestaande Teams, maar zul je in het nieuwe Team op 0 XP starten. Dit maakt het eerlijker als je bijvoorbeeld samen met collega's of familie een nieuw Team bent begonnen.</p>
+    </br>    
+        <p class="tekst">De punten die je verdient op toekomstige Ommetjes gelden voor alle Teams waar je aan meedoet.</p>
+
+        <hr class="hr">
+                <button class="close-btn" onclick="closePopup('popupuitleg')">Sluiten</button>
+    </div>
+
+    <div onclick="openPopup('popupuitleg')" class="uitleg">Uitleg</div></a>
+
+    <hr class="hr-line"></hr>
+
+    <!--FOOTER-->
+    <div id="popupgert">
+        <h1 class="header3">Gert2003</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 186</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 186</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupgert')">Sluiten</button>
+    </div>
+    
+    <div id="popupgalien">
+        <h1 class="header3">avdgalien</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 125</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 44</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <p class="medaltekst6">Badges</p><div class="medal6"></div><div class="medal7"></div>
+        <svg viewBox="0 0 75 75" width="50px" class="svg1">
+            <path d="m5,22 18,-18 28,0 18,18 0,28 -18,18, -28,0 -18,-18z" stroke="#d4d0d0" stroke-width="6" fill="#e7dfdf" />
+          </svg>
+          <svg viewBox="0 0 75 75" width="50px" class="svg2">
+            <path d="m5,22 18,-18 28,0 18,18 0,28 -18,18, -28,0 -18,-18z" stroke="#d4d0d0" stroke-width="6" fill="#e7dfdf" />
+          </svg>
+        
+        <button class="sluiten1-btn" onclick="closePopup('popupgalien')">Sluiten</button>
+    </div>
+
+    <div id="popupdaanvo">
+        <h1 class="header3">Daan_vO</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 46</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 46</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupdaanvo')">Sluiten</button>    
+    </div>
+
+    <div id="popupmatthiasb">
+        <h1 class="header3">MatthiasB</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 24</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 14</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupmatthiasb')">Sluiten</button>   
+    </div>
+
+    <div id="popupbslm">
+        <h1 class="header3">BslM</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 31</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 13</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupbslm')">Sluiten</button>   
+    </div>
+
+    <div id="popupkarel306">
+        <h1 class="header3">Karel306</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 20</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 14</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupkarel306')">Sluiten</button>   
+    </div>
+
+    <div id="popupmarkvdgraaf">
+        <h1 class="header3">Mark v/d Graaf</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 13</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 13</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupmarkvdgraaf')">Sluiten</button>   
+    </div>
+
+    <div id="popuprichardpost">
+        <h1 class="header3">RichardPost</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 11</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 11</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popuprichardpost')">Sluiten</button>   
+    </div>
+    <div id="popupgerben2004">
+        <h1 class="header3">Gerben2004</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 10</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 8</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupgerben2004')">Sluiten</button>   
+    </div>
+
+    <div id="popupdh">
+        <h1 class="header3">D h</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 6</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 6</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupdh')">Sluiten</button>   
+    </div>
+
+    <div id="popupdaanvh">
+        <h1 class="header3">Daan vH</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 5</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 5</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupdaanvh')">Sluiten</button>   
+    </div>
+
+    <div id="popupadwinz123"><h1 class="header3">AdwinZ123</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 4</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 4</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupadwinz123')">Sluiten</button>   
+    </div>
+
+    <div id="popupstephandrost"><h1 class="header3">Stephan Drost</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 7</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 7</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupstephandrost')">Sluiten</button>   
+    </div>
+
+    <div id="popuprenevanhelden"><h1 class="header3">René van helden</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 2</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 2</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popuprenevanhelden')">Sluiten</button>   
+    </div>
+
+    <div id="popupmachielI">
+        <h1 class="header3">M@chiel1</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 1</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 1</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupmachielI')">Sluiten</button>   
+    </div>
+
+    <div id="popupmark_lokhorst"><h1 class="header3">Mark_Lokhorst</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 0</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 0</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupmark_lokhorst')">Sluiten</button>   
+    </div>
+
+    <div id="popupitzbarts">
+        <h1 class="header3">ItzBarts</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 0</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 0</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupitzbarts')">Sluiten</button>   
+    </div>
+
+    <div id="popupdaanheikamp"><h1 class="header3">Daan Heijkamp</h1></br>
+        <p class="tekst3">Ommetjes in totaal: 0</p></br>
+        <p class="tekst4">Ommetjes binnen T4I1AA C20: 0</p>
+        <p class="medaltekst">Hiker</p><div class="medal"></div>
+        <p class="medaltekst1">Reeks</p><div class="medal1"></div>
+        <p class="medaltekst2">Hart</p><div class="medal2"></div>
+        <p class="medaltekst3">Vroege vogel</p><div class="medal3"></div>
+        <p class="medaltekst4">Blijf actief</p><div class="medal4"></div>
+        <p class="medaltekst5">Weetjes</p><div class="medal5"></div>
+        <button class="sluiten1-btn" onclick="closePopup('popupdaanheikamp')">Sluiten</button>   
+    </div>
+
+<div class="rank-current"></div>
+<div class="rank-top">
+    <div class="rank-margin" onclick="openPopup('popupgert')"><div class="rank-nummer">#1</div><div class="rank-naam">Gert2003</div><div class="rank-xp">663 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupgalien')"><div class="rank-nummer">#2</div><div class="rank-naam">avdgalien</div><div class="rank-xp">448 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupdaanvo')"><div class="rank-nummer">#3</div><div class="rank-naam">Daan_vO</div><div class="rank-xp">440 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupmatthiasb')"><div class="rank-nummer">#4</div><div class="rank-naam">MatthiasB</div><div class="rank-xp">149 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupbslm')"><div class="rank-nummer">#5</div><div class="rank-naam">BslM</div><div class="rank-xp">134 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupkarel306')"><div class="rank-nummer">#6</div><div class="rank-naam">Karel306</div><div class="rank-xp">131 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupmarkvdgraaf')"><div class="rank-nummer">#7</div><div class="rank-naam">Mark v/d..</div><div class="rank-xp">115 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popuprichardpost')"><div class="rank-nummer">#8</div><div class="rank-naam">RichardP..</div><div class="rank-xp">104 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupgerben2004')"><div class="rank-nummer">#9</div><div class="rank-naam">Gerben20..</div><div class="rank-xp">49 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupdh')"><div class="rank-nummer">#10</div><div class="rank-naam1">D h</div><div class="rank-xp">40 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupdaanvh')"><div class="rank-nummer">#11</div><div class="rank-naam1">Daan vH</div><div class="rank-xp">24 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupadwinz123')"><div class="rank-nummer">#12</div><div class="rank-naam1">AdwinZ123</div><div class="rank-xp">18 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupstephandrost')"><div class="rank-nummer" style="color: white;">#13</div><div class="rank-naam1" style="color: white;">Stephan ..</div><div class="rank-xp" style="color: white;">16 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popuprenevanhelden')"><div class="rank-nummer">#14</div><div class="rank-naam1">René van..</div><div class="rank-xp">16 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupmachielI')"><div class="rank-nummer">#15</div><div class="rank-naam1">M@chiel I</div><div class="rank-xp">5 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupmark_lokhorst')"><div class="rank-nummer">#16</div><div class="rank-naam1">Mark_lok..</div><div class="rank-xp">2 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupitzbarts')"><div class="rank-nummer">#17</div><div class="rank-naam1">ItzBarts</div><div class="rank-xp">2 XP</div></div>
+    <div class="rank-margin" onclick="openPopup('popupdaanheikamp')"><div class="rank-nummer">#17</div><div class="rank-naam1">Daan Hei..</div><div class="rank-xp">2 XP</div></div>
+</div>
+
+<div class="meda-top">
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div><div class="meda4"></div><div class="meda5"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div><div class="meda4"></div><div class="meda5"></div><div class="meda6"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div><div class="meda4"></div><div class="meda5"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div><div class="meda4"></div><div class="meda5"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div><div class="meda3"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div><div class="meda2"></div></div>
+    <div class="meda-margin"><div class="meda"></div><div class="meda1"></div></div></div>
+    <div class="meda24"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .backArrow {
+    position: absolute;
+    width: 23px;
+    margin: 39px 35px;
+  }
+  
+  .title {
+    position: absolute;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #a8138d;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 150px;
+  }
+  
+  .questionmark {
+    width: 6%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .questionmarkdiv {
+    position: fixed !important;
+    bottom: 10px;
+    right: 8px;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .top-header1 {
+    position: absolute;
+    margin-left: 39px;
+    margin-top: 110px;
+    font-family: "Open Sans", sans-serif;
+    color: #a8138d;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .top-input {
+    position: absolute;
+    margin-left: 39px;
+    width: 70%;
+    margin-top: 135px;
+    font-family: "Open Sans", sans-serif;
+    color: gray;
+    font-size: 14px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #a8138d;
+  }
+  
+  .toetreed-btn {
+    color: white;
+    background-color: #a8138d;
+    position: absolute;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 70px;
+    margin-top: 180px;
+    left: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 10px 1px #dbd9d9;
+  }
+  
+  .start-btn {
+    color: white;
+    background-color: #f3a93c;
+    position: absolute;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 55px;
+    margin-top: 250px;
+    left: 95px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 10px 1px #b8b5b5;
+  }
+    
+  .box {
+      height: 210px;
+      width: 260px;
+      background-color: white;
+      position: absolute;
+      text-align: center;
+      left: 39px;
+      top: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 1px #888888;
+  }
+  
+  .box-header1 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    color: #a8138d;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .box-text1 {
+    font-size: 12px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: start;
+    width: 80%;
+  }
+  
+  .hr-line {
+    width: 85%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    border: 1px solid #746c6c;
+  }
+  
+  .box-header2 {
+    position: absolute;
+    margin-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: #a8138d;
+    font-weight: bold;
+    font-size: 18px;
+    top: 110px;
+  }
+  
+  .box-text2 {
+    font-size: 12px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-align: start;
+    width: 80%;
+  }
+  
+  .deel-btn {
+    color: white;
+    background-color: #f3a93c;
+    position: absolute;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 160px;
+    left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 10px 1px #b8b5b5;
+  }
+  
+  .footer-header {
+      position: absolute;
+    margin-left: 39px;
+    width: 60%;
+    font-family: "Open Sans", sans-serif;
+    color: #a8138d;
+    font-weight: bold;
+    font-size: 18px;
+    top: 550px;
+  }
+  
+  .footer-text {
+  font-size: 13px;
+  color: gray;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  margin-left: 39px;
+  margin-top: 610px;
+  font-weight: bold;
+  }

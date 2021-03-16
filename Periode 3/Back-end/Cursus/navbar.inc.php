@@ -7,12 +7,24 @@
     <div class="overlay"></div>
     <div class="container">
         <nav>
-            <h1 class="brand"><a href="index.html">Cur<span>s</span>us</a></h1>
+            <h1 class="brand"><a href="Home.php">Cur<span>s</span>us</a></h1>
             <ul>
-                <li style="text-decoration: none;"><a href="#">Home</a></li>
-                <li><a href="#">Cursussen</a></li>
-                <li><a href="#">Inloggen</a></li>
-                <li><a href="#">Contact</a></li>
+                <li style="text-decoration: none;"><a href="Index.php">Home</a></li>
+                <li><a href="Cursus.php">Cursussen</a></li>
+                <?php
+                if (isset($_SESSION['ingelogd'])) {
+                    echo '<li><a href="Uitloggen.php">Uitloggen</a></li>';
+                } else {
+                    echo '<li><a href="Login.php">Inloggen</a></li>';
+                }
+                if (isset($_SESSION['ingelogd']['perms']) && $_SESSION['ingelogd']['perms'] != 'admin') {
+                    echo '<li><a href="Account.php">Account</a></li>';
+                }
+
+                if (isset($_SESSION['ingelogd']['perms']) && $_SESSION['ingelogd']['perms'] == 'admin') {
+                    echo '<li><a href="admin.php">Admin</a></li>';
+                }
+                ?>
             </ul>
         </nav>
     </div>

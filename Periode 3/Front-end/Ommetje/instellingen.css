@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .backArrow {
+    position: absolute;
+    width: 23px;
+    margin: 39px 35px;
+  }
+  
+  .title {
+    position: absolute;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #a8138d;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  
+  .questionmark {
+    width: 6%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .questionmarkdiv {
+    position: fixed !important;
+    bottom: 10px;
+    right: 8px;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .username {
+    float: left;
+    margin-top: 100px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 39px;
+  }
+
+  .username-fill {
+    float: right;
+    margin-top: 100px;
+    color: #a8138d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    position: relative;
+    right: 39px;
+  }
+
+  .hr-1{
+    border: 1px solid gray;
+    width: 80%;
+    top: 4px;
+    left: 39px;
+    position: relative;
+  }
+
+  .firstname {
+    float: left;
+    margin-top: 20px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 39px;
+  }
+
+  .firstname-fill {
+    float: right;
+    margin-top: 20px;
+    color: #a8138d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    position: relative;
+    right: 60px;
+  }
+
+  .edit-img {
+    width: 7%;
+    transform: rotate(-20deg);
+    float: right;
+    margin-right: -20px;
+    margin-top: 10px;
+  }
+
+  .hr-2 {
+    border: 1px solid gray;
+    width: 80%;
+    top: 4px;
+    left: 39px;
+    position: relative;
+  }
+
+  .pushnot {
+    float: left;
+    margin-top: 20px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 39px;
+  }
+
+  .hr-3 {
+    border: 1px solid gray;
+    width: 80%;
+    top: 4px;
+    left: 39px;
+    position: relative;
+  }
+
+  .appgeluid {
+    float: left;
+    margin-top: 20px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 39px;
+  }
+
+  .hr-4 {
+    border: 1px solid gray;
+    width: 80%;
+    top: 4px;
+    left: 39px;
+    position: relative;
+  }
+
+  .taal {
+    float: left;
+    margin-top: 20px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: 39px;
+  }
+
+.hr-5 {
+  border: 1px solid gray;
+  width: 80%;
+  top: 42px;
+  left: 14px;
+  position: relative;
+}
+
+  .bijwerk-btn {
+    color: white;
+    background-color: #a8138d;
+    position: absolute;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 65px;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 10px 1px #c7c4c4;
+  }
+
+  .hr-6 {
+    border: 1px solid gray;
+    width: 80%;
+    top: 105px;
+    left: 14px;
+    position: relative;
+  }
+
+  .beheer-btn {
+    color: white;
+    background-color: #f3a93c;
+    position: absolute;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 55px;
+    top: 365px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 10px 1px #c7c4c4;
+  }
+
+  .hr-7 {
+    border: 1px solid gray;
+    width: 80%;
+    top: 165px;
+    left: 14px;
+    position: relative;
+  }
+
+  .verwijder-btn {
+    color: #a8138d;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 22px;
+    top: 430px;
+    margin-left: auto;
+    font-weight: bold;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    box-shadow: 0 0 10px 1px #c7c4c4;
+  }
+
+  /* Slider */
+
+  .switch {
+    position: relative;
+    width: 55px;
+    height: 26px;
+    float: right;
+    top: 13px;
+    right: 39px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 3px solid #a8138d;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #a8138d;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #a8138d;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Dropdown menu */
+
+  select {
+    margin: 50px;
+    position: absolute;
+    width: 150px;
+    top: 200px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    height: 34px;
+    right: -12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: url(/Images/arrowDown.png) 96% / 15% no-repeat transparent;
+  }
